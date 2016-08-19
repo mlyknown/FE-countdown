@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RxJS</title>
+</head>
+<style>
+.ez-led{
+  font-family:"LED";
+  font-size:40px;
+  background:#70d355;
+  width:300px;
+  height:60px;
+  line-height:60px;
+  text-align:right;
+  padding:10px;
+  letter-spacing:5px;
+}
+</style>
+<body>
+<div class="ez-led" id="clock">00:00:00</div>
+
+<!-- <script src="./miniRxjs.js"></script> -->
+<script src="./timerMgr.js"></script>
+<!-- <script src="./countdown.js"></script> -->
+<script src="./ct.js"></script>
+<script>
+  countdown({
+    cb:function(data){
+      console.log(data)
+    },
+    maxCount:500
+  })
+</script>
+
+</body>
+</html>
